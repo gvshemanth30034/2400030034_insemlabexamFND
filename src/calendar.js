@@ -24,7 +24,7 @@ function Calendar() {
 
   return (
     <div className="calendar">
-      <h2>📅 {today.toLocaleString("default", { month: "long" })} {year}</h2>
+      <h2> {today.toLocaleString("default", { month: "long" })} {year}</h2>
       <div className="calendar-grid">
         {[...Array(daysInMonth)].map((_, i) => {
           const day = i + 1;
